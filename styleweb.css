@@ -1,0 +1,244 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.container{
+    width:100%;
+    min-height: 100vh;
+    padding-left: 8%;
+     padding-right: 8%;
+     box-sizing: border-box;
+     overflow:hidden;
+
+}
+.navbar
+{
+    width:100%;
+    display:flex;
+    align-items:center;
+
+}
+.menu-icon
+{
+    width:25px;
+    cursor:pointer;
+    display:none;
+}
+nav{
+    flex:1;
+     text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 14px;
+
+}
+nav ul li a:hover
+{
+    color:#ff5ea2;
+}
+.row
+{
+    display :flex;
+  
+    align-items: left;
+    margin:50px;
+    
+
+}
+.col-1
+{
+    flex-basis: 40%;
+    position:relative;
+    margin-left:50px;
+
+}
+.col h1{
+    font-size: 54px ;
+}
+.col-1 p{
+    margin:30px 0;
+    font-size: 20px;
+
+}
+button{
+    width:140px;
+    border:0;
+    padding:12px 10px;
+    outline:none;
+    color:white;
+    background-color: black;
+    border-radius:6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button:hover{
+    width:160px;    
+}
+
+
+.col-2
+{
+    position: relative;
+    flex-basis: 60%;
+    align-items:center;
+
+}
+.col-2.bg
+{
+width:90%;
+}
+
+
+
+
+
+
+
+
+
+.row2
+{
+    display :flex;
+  
+    align-items:center;
+    margin:50px;
+}
+.col-3
+{
+    flex-basis: 40%;
+    position:relative;
+    margin-left:50px;
+
+}
+.col3 h2{
+    font-size: 54px ;
+    padding-left: 150%;
+}
+.col-3 p{
+    margin:30px 0;
+    font-size: 20px;
+
+}
+
+
+*
+{
+    box-sizing: border-box;
+}
+
+
+
+.col-4
+{
+    float:left;
+    width:33.33%;
+    padding:3px;
+}
+.col-4 img2{
+    height: 300px;
+}
+.row3::after
+{
+content:"";
+display: table;
+clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:700px)
+{
+    nav ul
+    {
+        width:100%;
+        position:absolute;
+        top:75px;
+        right:0;
+        z-index:2;
+
+    }
+    nav ul li
+    {
+        display:block;
+        margin-top: 1px;
+        margin-bottom:2px;
+
+    }
+    .menu-icon
+    {
+        display:block;
+    }
+    #menuList
+    {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row{
+        flex-direction:column-reverse;
+        margin:50px,0;
+
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-top: 50px;
+
+    }
+    .col2 .bg
+    {
+     width:77%;
+
+    }
+    .col-1{
+        font-size: 35px;       
+    }
+    .col-1 h1
+    {
+        font-size: 35px;
+    }
+    .row{
+        flex-direction:column-reverse;
+        margin:50px,0;
+
+    }
+    
+    .col-3{
+        font-size: 35px;       
+    }
+    .col-3 h2
+    {
+        font-size: 35px;
+    }
+
+
+
+    .row3{
+        grid-template-rows:04fr 0.4fr 0.4fr;
+        grid-template-columns:1fr ;
+
+    }
+}

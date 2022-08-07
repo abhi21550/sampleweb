@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleweb.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">INSIGHTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">OTHER</a></li>
+
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1">
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit.</p>
+            <button button type="button">VIEW MORE</button>
+        </div>
+        <div class="col-2">
+            <img src="images/jatniel-tunon-D4f5wkW9H9U-unsplash.jpg" width="100%" class="bg">
+         </div>
+    </div>
+         <div class="row1">
+         
+            <div class="col-3">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+
+        <div class="row3">
+            <div class="col-4">
+                <img class="img2" src="images/background4.jpg" width="100%">
+                <button class="btn1" button type="button">CONTENT </a></button>
+            </div>
+            <div class="col-4">
+                <img class="img2" src="images/background2.jpg" width="100%">
+                <button class="btn2" button type="button"> CONTENT </a></button>
+            </div>
+            <div class="col-4">
+                <img class="img2" src="images/background3.jpg" width="100%">
+                <button class="btn3" button type="button"> CONTENT </a></button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight="0px";
+    function togglemenu()
+    {
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "130px";
+
+        }
+        else
+        {
+            menuList.style.maxHeight="0px";
+        }
+    }
+    </script>
+</body>
+</html>
